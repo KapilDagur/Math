@@ -157,4 +157,102 @@ int is_symmetric_matrix(const int **matrix, const int row, const int col);
  */
 int is_skew_symmetric_matrix(const int **matrix, const int row, const int col);
 
+/**
+ * @brief Check if the matrix is a diagonalizable matrix.
+ * 
+ * @param matrix The matrix to check.
+ * @param row Number of rows in the matrix.
+ * @param col Number of columns in the matrix.
+ * @return int Returns 1 if the matrix is diagonalizable, otherwise returns 0.
+ * 
+ * @note A matrix is diagonalizable if it can be represented as A = PDP^(-1), where D is a diagonal matrix.
+ */
+int is_diagonalizable_matrix(const int **matrix, const int row, const int col);
+
+/**
+ * @brief Check if the matrix is a hollow matrix.
+ * 
+ * @param matrix The matrix to check.
+ * @param row Number of rows in the matrix.
+ * @param col Number of columns in the matrix.
+ * @return int Returns 1 if the matrix is a hollow matrix, otherwise returns 0.
+ * 
+ * @note A hollow matrix is a square matrix where all the diagonal elements are zero.
+ */
+int is_hollow_matrix(const int **matrix, const int row, const int col);
+
+/**
+ * @brief Check if the matrix is a Hermitian matrix.
+ * 
+ * @param matrix The matrix to check.
+ * @param row Number of rows in the matrix.
+ * @param col Number of columns in the matrix.
+ * @return int Returns 1 if the matrix is Hermitian, otherwise returns 0.
+ * 
+ * @note A Hermitian matrix is a complex square matrix that is equal to its conjugate transpose.
+ */
+int is_hermitian_matrix(const int **matrix, const int row, const int col);
+
+/**
+ * @brief Check if the matrix is a Toeplitz matrix.
+ * 
+ * @param matrix The matrix to check.
+ * @param row Number of rows in the matrix.
+ * @param col Number of columns in the matrix.
+ * @return int Returns 1 if the matrix is a Toeplitz matrix, otherwise returns 0.
+ * 
+ * @note A Toeplitz matrix is one where each descending diagonal from left to right is constant.
+ */
+int is_toeplitz_matrix(const int **matrix, const int row, const int col);
+
+/**
+ * @brief Check if the matrix is a block matrix.
+ * 
+ * @param matrix The matrix to check.
+ * @param row Number of rows in the matrix.
+ * @param col Number of columns in the matrix.
+ * @return int Returns 1 if the matrix is a block matrix, otherwise returns 0.
+ * 
+ * @note A block matrix is partitioned into smaller submatrices, called blocks.
+ */
+int is_block_matrix(const int **matrix, const int row, const int col);
+
+/**
+ * @brief Check if the matrix is a singular matrix.
+ * 
+ * @param matrix The matrix to check.
+ * @param row Number of rows in the matrix.
+ * @param col Number of columns in the matrix.
+ * @return int Returns 1 if the matrix is singular, otherwise returns 0.
+ * 
+ * @note A singular matrix is a square matrix with a determinant of zero, and it does not have an inverse.
+ */
+int is_singular_matrix(const int **matrix, const int row, const int col);
+
+/**
+ * @brief Check if the matrix is a non-singular matrix.
+ * 
+ * @param matrix The matrix to check.
+ * @param row Number of rows in the matrix.
+ * @param col Number of columns in the matrix.
+ * @return int Returns 1 if the matrix is non-singular, otherwise returns 0.
+ * 
+ * @note A non-singular matrix is a square matrix with a non-zero determinant and has an inverse.
+ */
+int is_non_singular_matrix(const int **matrix, const int row, const int col);
+
+/**
+ * @brief Check if the matrix is an orthogonal matrix.
+ * 
+ * @param matrix The matrix to check.
+ * @param row Number of rows in the matrix.
+ * @param col Number of columns in the matrix.
+ * @return int Returns 1 if the matrix is orthogonal, otherwise returns 0.
+ * 
+ * @note An orthogonal matrix is a square matrix whose transpose is equal to its inverse (A^T = A^(-1)).
+ */
+int is_orthogonal_matrix(const int **matrix, const int row, const int col);
+
+
+
 #endif

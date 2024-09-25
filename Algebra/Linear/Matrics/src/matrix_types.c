@@ -201,3 +201,17 @@ int is_skew_symmetric_matrix(const int **matrix, const int row, const int col){
 
     return 1;
 }
+
+
+int is_hollow_matrix(const int **matrix, const int row, const int col){
+    //BASE CASE (SQUARE MATRIX REQUIRED)
+    if(!is_square_matrix(matrix,row,col))
+        return 0;
+    
+    //Init...
+    int i;
+    for(i = 0; i < row; i++)
+        if(!(matrix[i][i] == 0))
+            return 0;
+    return 1;
+}
